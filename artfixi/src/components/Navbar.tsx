@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "../lib/utils";
+import { cn } from "../app/lib/utils";
 
 export function NavbarDemo() {
   return (
@@ -21,15 +21,15 @@ export function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Services">
+        <MenuItem setActive={setActive} active={active} item="Courses">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/Advanced Sketching Techniques">Advanced Sketching Techniques</HoveredLink>
+            <HoveredLink href="/Sketching for Beginners">Sketching for Beginners</HoveredLink>
+            <HoveredLink href="/Hyper-realistic Hair">Hyper-realistic Hair</HoveredLink>
+            <HoveredLink href="/Portrait Sketching">Portrait Sketching</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
+        <MenuItem setActive={setActive} active={active} item="My artworks">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Algochurn"
@@ -57,12 +57,12 @@ export function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="commission work">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/delivered art work">delivered art work</HoveredLink>
+            <HoveredLink href="/pricing">pricing</HoveredLink>
+            <HoveredLink href="/Feedbacks">Feedbacks</HoveredLink>
+            
           </div>
         </MenuItem>
       </Menu>

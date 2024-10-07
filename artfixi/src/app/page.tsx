@@ -1,8 +1,12 @@
-
-import HeroSection from "./components/HeroSection"
+import FeaturedCourses  from "@/components/FeaturedCourses"
+import HeroSection from "@/components/HeroSection"
+import ArtTestimonials from "@/components/TestimonialCards"
 export default function Home() {
   return (
-    <div className="flex justify-center h-screen items-center"
-    ><HeroSection></HeroSection></div>
+    <div className="  h-screen  ">
+      <HeroSection></HeroSection>
+      <FeaturedCourses></FeaturedCourses>
+      <ArtTestimonials />
+    </div>
   );
 }
